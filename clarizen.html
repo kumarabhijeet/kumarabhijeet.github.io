@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>clarizen webpage</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("a.Freetrial").hover(function () {
+
+                $(".FreeTrial").css({
+                    "background-color": "#808080",
+                    "border": "2px solid #ff8a22",
+                    "cursor": "pointer"
+                });
+                $("a.Freetrial").css({
+                    "color": "#ff8a22"
+                });
+            }, function () {
+                $(".FreeTrial").css({
+                    "background-color": "#ff8a22",
+                    "border": "0px"
+                });
+                $("a.Freetrial").css("color", "white");
+            });
+        });
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+
+            if (scroll > 20) {
+                $("#trail2").removeClass("list");
+                $("#trail2").addClass("list1");
+                $("#trail1").css("display", "none");
+                $(".image1").css("display", "none");
+                $(".image2").css("display", "inline-block");
+                $("#trail2").css("background-color", "white");
+                $(".one .first a").css("color", "#808080");
+
+
+
+            } else if (scroll < 19 && scroll > 0) {
+                $("#trail2").addClass("list");
+                $("#trail2").removeClass("list1");
+                $("#trail1").css("display", "block");
+                $(".image2").css("display", "none");
+                $(".image1").css("display", "inline-block");
+                $("#trail2").css("backgroundColor", "#808080");
+                $(".one .first a").css("color", "white");
+            }
+        });
+    </script>
+    <style>
+        .first a {
+            transition: all .4s ease-in-out;
+        }
+        
+        .first a:hover {
+            border-bottom: 2px solid #159fdd;
+            padding-bottom: 10px !important;
+        }
+        
+        .second a {
+            transition: border-bottom .4s ease-in-out;
+        }
+        
+        .second a:hover {
+            border-bottom: 2px solid #159fdd;
+            padding-bottom: 7px;
+        }
+        
+        .image1 {
+            margin-left: 100px;
+            height: 50px;
+            display: inline-block;
+            margin-top: 8px;
+            width: 200px;
+        }
+        
+        .image2 {
+            margin-left: 100px;
+            height: 50px;
+            display: none;
+            margin-top: 8px;
+            width: 200px;
+        }
+        
+        .list {
+            width: 100%;
+            height: 70px;
+            background-color: rgba(128, 128, 128, 1);
+            position: fixed;
+            top: 35px
+        }
+        
+        .list1 {
+            color: white;
+            width: 100%;
+            height: 70px;
+            background-color: rgba(128, 128, 128, 1);
+            position: fixed;
+            top: 0
+        }
+        .SuperSubLastChild
+		  {
+		  margin-left:14px;
+		  }
+        .search {
+            color: white;
+            width: 100%;
+            position: fixed;
+            display: block
+        }
+        
+        .second a,
+        .second span {
+            position: fixed;
+        }
+        
+        .clickfree:hover {
+            background-color: white!important;
+            border: 2px solid #ff8a22;
+        }
+        
+        .clickfree:hover a {
+            color: #ff8a22 ! important;
+        }
+        
+        .main3Child {
+            width: 29.666%;
+            margin-left: 10px;
+            height: auto;
+       
+            float: left;
+        }
+        
+        .main4Child {
+            margin-left: 10px;
+            height: auto;
+          
+            width: 29.666%;
+            float: left;
+        }
+        
+        @media screen and (max-width: 980px) {
+            .main3Child {
+                width: 100%;
+                height: 100%;
+                margin: auto!important;
+                overflow: hidden;
+                margin-top: 15px!important;
+                background-color: green;
+                display: block;
+            }
+        }
+        
+        @media screen and (max-width: 980px) {
+            .main4Child {
+                width: 100%;
+                height: 100%;
+                margin: auto!important;
+                overflow: hidden;
+                margin-top: 15px!important;
+                background-color: green;
+                display: block;
+            }
+        }
+        
+        .images {
+            max-height: 75px;
+            text-align: center;
+            max-width: 75px;
+            margin: auto;
+            margin-bottom: 17px;
+            margin-top: 20px;
+        }
+        
+        h4 {
+            color: #34393e;
+            font-size: 20px;
+            font-weight: 300;
+            line-height: 1.2;
+            text-align: center;
+            font-family: museo-sans, Open Sans, Arial, sans-serif;
+        }
+        h2{
+            margin-top:80px;
+            font-size:42px;
+            color:#34393e;
+            font-weight:100;
+            line-height:1.2;
+            font-family:museo-sans, Open Sans, Arial, sans-serif; 
+            margin-bottom:0;
+        }
+        
+
+        p {
+            font-size: 18px;
+            font-family: museo-sans, Open Sans, Arial, sans-serif;
+		
+        }
+        .buttons{
+            width:120px;
+            height:40px;
+            background-color:#ff8a22;
+            text-align:center;
+            margin:3px;
+            position:relative;
+            top:30px;
+            padding-top:10px;
+            margin-top:10px;
+            display:inline-block;
+            border: 2px solid transparent;
+            
+        }
+        
+        .TourDemo div:hover {
+            background-color: white!important;
+            border-color:#ff8a22;
+        }
+        
+        .TourDemo div:hover a {
+            color: #ff8a22!important;
+        }
+		
+  .f1_container {
+  position: relative;
+  width: 350px;
+  margin-left:5.5%;
+  height: 320px;
+  z-index: 1;
+  float:left;
+  margin-top:50px;
+}
+
+.f1_container {
+  perspective: 1000;
+}
+.f1_card {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 1.0s linear;
+}
+.f1_container:hover .f1_card {
+  transform: rotateY(180deg);
+
+}
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.face.back{
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+  padding: 10px;
+  color: white;
+
+}
+.frontface img{ 
+    max-width:177px;
+	max-height:200px;
+    
+	
+	}
+ .frontface{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  }
+
+.f1_container .f1_card .frontface img{
+    position: absolute;
+    top: 45%;
+    width: 70%;
+    transform: translateY(-40%);
+    left: 25%;
+	}
+	blockquote{
+	border:none;
+	}
+	
+	blockquote p{
+	font-size:30px;
+	font-style: italic;
+	line-height: 1.3;
+    font-weight: 300;
+	}
+	 .f1_container:nth-child(1) .f1_card div:nth-child(1),.f1_container:nth-child(1) .f1_card div:nth-child(2){
+      background-color:#ff8a22;
+     }
+ 	 .f1_container:nth-child(2) .f1_card div:nth-child(1),.f1_container:nth-child(2) .f1_card div:nth-child(2){
+      background-color:#34393e;
+     }
+ 	 .f1_container:nth-child(3) .f1_card div:nth-child(1),.f1_container:nth-child(3) .f1_card div:nth-child(2){
+      background-color:#159fdd;
+ }
+   
+    .company{
+	  padding-left:20px;
+	  }
+
+	.main4Child p{
+	     text-align:center;
+		 }
+		 .main3Child p{
+	     text-align:center;
+		 }
+		 
+		 img{
+		    max-width:100%;
+		    height:auto;
+			vertical-align:middle;
+			
+			}
+			.logos{
+			     margin:0;
+				 }
+			.viewmore
+			{
+			  text-decoration:none!important;
+			  font-size:15px;
+			  color:white!important;
+			  
+			  }
+			  .ViewMoreDetail:hover{
+			    background-color:white!important;
+				border:2px solid #ff8a22;
+				border-radius:0;
+				letter-spacing:0;
+				}
+		      .ViewMoreDetail:hover a{
+			     color:#ff8a22!important;
+				}
+			  .clarizentext
+			  {
+			   color:white;
+			   margin:0;
+			   padding-bottom:15px;
+			   }
+			.DownloadReport
+			{
+			 width:180px;
+			 text-align:center;
+			 padding:10px;
+			 height:41px;
+			 
+			 border:2px solid white;
+			 }
+			 .DownloadReport:hover
+			 {
+			   background-color:white;
+			   
+			   }
+		   
+		    .DownloadReport:hover a
+			 {
+			  color:#ff8a22!important;
+			   
+			   }
+			   .ForresterText
+			   {
+			   margin:0;
+			   color:white;
+			    padding-bottom:15px;
+			   }
+			   
+			   .resource_content>h4{
+			       min-height: 170px;
+                   overflow: visible;
+				   }
+				   
+			  .resource_contentclass
+			  {
+			   color:black;
+			   text-align:left;
+			   }
+			   .resource_content>p .icon 
+			   {
+			    background-image:url("white_paper.png");
+			    background-repeat: no-repeat;
+                float: left;
+				width: 36px;
+				
+                height: 35px;
+                margin-right: 10px;
+               
+				}
+				.resource_content>p .icon2 
+			   {
+			    background-image:url("white_paper2.png");
+			    background-repeat: no-repeat;
+                float: left;
+				width: 36px;
+				
+                height: 35px;
+                margin-right: 10px;
+               
+				}
+				
+				.resource_content>p .icon3 
+			   {
+			    background-image:url("webinar.png");
+			    background-repeat: no-repeat;
+                float: left;
+				width: 36px;
+				
+                height: 35px;
+                margin-right: 10px;
+               
+				}
+				.resource_content>p .icon4 
+			   {
+			    background-image:url("white_paper.png");
+			    background-repeat: no-repeat;
+                float: left;
+				width: 36px;
+				
+                height: 35px;
+                margin-right: 10px;
+               
+				}
+				.resource_content:hover{
+				background-color:#ff8a22!important;
+				}
+				
+				.resource_content:hover .resource_contentclass{
+		         color:white;
+				}
+				.resource_content:hover span:nth-child(2)
+				{
+				 color:white!important;
+				 }
+				 
+				.resource_content:hover .icon{
+				 background-image:url("white_paper_hover.png");
+				 }
+				 .resource_content:hover .icon2{
+				 background-image:url("white_paper_hover.png");
+				 }
+				 .resource_content:hover .icon3{
+				 background-image:url("webinar-hover.png");
+				 }
+				 .resource_content:hover .icon4{
+				 background-image:url("white_paper_hover.png");
+				 }
+				 
+				  .Tryit
+				  { 
+				   color:white;
+				   text-decoration:none!important;
+				   border-color:#ff8a22;
+				   background:#ff8a22;
+				   border-style:solid;
+				   padding:10px;
+				   font-size:16px;
+				   border-radius:0;
+				   letter-spacing:0;
+				   }
+				   
+				 .Tryitnow:hover a
+				 {
+				    background:#f0f0f0 !important;
+					color:#ff8a22!important;
+					border-color:#ff8a22!important;
+                 }
+                #main_footer{
+                     background-color:#34393e;
+					 width:100%;
+					 height:auto;
+					 padding:6% 0 0;
+                       }
+					   
+				 #main-footer>.container 
+				  {
+                  border-bottom: 1px solid red;
+                  }
+				  .container{
+				  
+				   
+				   width:80%;
+				   margin:auto;
+				   position:relative;
+                   text-align: left;
+				   height:492px;
+				  }
+				  
+				  #text2
+				  {
+				  width:66%;
+			
+				  height:auto;
+				  float:left;
+				  margin-right:3.7%;
+				  margin-bottom:7.47%;
+				  }
+				  
+				  #text3
+				  {
+				  width:29%;
+				  
+				  height:auto;
+				  float:left;
+				  margin-top:7%;
+				  }
+				  .title
+				  {
+				   color:white;
+				   }
+				   .Subscribe .subscribeanchor
+				   {
+				   color:white;
+				   background:#ff8a22;
+				   text-decoration:none;
+				   cursor:pointer;
+				   padding:8px 30px;
+				   font-size:16px;
+				   font-weight: 500;
+                   margin-top: 5px;
+				   margin-left:5px;
+                   display: inline-block;
+				   }
+				  .contactanchor
+				  {
+				  text-decoration:none!important;
+				  border:2px solid white;
+				  color:white; 
+				  padding:15px 30px;
+				  float:left;
+				  cursor:pointer;
+				  font-size: 16px;
+                  font-weight: 300;
+				  }
+				  .ContactUs>ul{
+				    float: left;
+                    padding-left: 50px;
+					list-style: none;
+			
+					}
+				  .ContactUs>ul li{
+				    margin-top:3px;
+					float:left;
+					padding-right:20px;
+					}
+					
+					.ContactUs .contactanchor:hover{
+					  background:white;
+					  transition:all .2s;
+					  }
+					.cp_linklist
+					{
+					  list-style:none;
+					  padding:0;
+					  float:left;
+					}
+					.cp_linklist .trending
+					 {
+					  display:inline;
+					  margin-right:10px;
+					  color:#848484;
+			         
+					  }
+					.cp_linklist .trending a{
+					   color:#848484;
+					   text-decoration:none;
+					   line-height:1.7em;
+					   font-size:15px;
+					   font-family: 'museo-sans',"Open Sans",Arial,sans-serif;
+                       font-weight: 300;
+			         }
+					 .cp_linklist .trending a:hover{
+					   color:white;
+			         }
+					 
+					 .LastListIcons{
+					  list-style:none;
+					  }
+					  
+					  .LastIcons
+					  {
+					    float:left;
+						padding-right:20px;
+						margin-top: 3px;
+						}
+						#menu-footer-menu
+						{
+						  list-style:none;
+						  padding-left:10px;
+						  float:right;
+						  }
+						  
+						   .menu-item
+						   {
+						    float:left;
+							margin-right:10px;
+							}
+							.menu-item .menuanchor{
+							text-decoration:none;
+							color:#bcbcbc;
+							}
+				  
+    </style>
+
+</head>
+
+<body>
+    <div class="main1" style="background-color:rgba(128,128,128,1);width:100%;height:697px;">
+        <div id='trail1' class="container-flex" class='search'>
+
+            <div class="second" style="display:inline-block;width:60px;height:30px;text-align:center;margin-left:79%;"><a href="#support" style="color:white;text-decoration:none;">Support</a></div>
+            <div class="second" style="display:inline-block;width:60px;height:30px;text-align:center;"><a href="#Login" style="color:white;text-decoration:none;">Login</a></div>
+            <div class="second" style="display:inline-block;width:40px;height:30px;text-align:center;"><span class="glyphicon glyphicon-search" style="margin-top:5px;color:white;"></span></div>
+
+        </div>
+
+        <div id='trail2' class='list'>
+
+            <div class="image1"><img src="site-logo.png" alt="clarizen"></div>
+            <div class="image2">
+                <img src="blue-logo2.png" alt="clarizen2"></div>
+	 <div  class="one " style="display:inline-block;top:10px;position:relative;margin-left:360px ">
+	 <div class="first" style="display:inline-block;width:60px;font-size:18px;height:23px; "><a href="#Teams " style="color:white;text-decoration:none; ">Teams</a></div>
+	 <div class="first" style="display:inline-block;width:70px;margin-left:20px;font-size:18px;height:23px; "><a href="#Product " style="color:white;text-decoration:none; ">Product</a></div>
+	 <div class="first" style="display:inline-block;width:90px;margin-left:20px;font-size:18px;height:23px; "><a href="#Customers " style="color:white;text-decoration:none; ">Customers</a></div>
+	 <div class="first" style="display:inline-block;width:90px;margin-left:20px;font-size:18px;height:23px; "><a href="#Resources " style="color:white;text-decoration:none; ">Resources</a></div>
+	 <div class="first" style="display:inline-block;width:50px;margin-left:20px;font-size:18px;height:23px; "><a href="#About " style="color:white;text-decoration:none; ">About</a></div>
+	 <div class="FreeTrial" style="display:inline-block;width:120px;background-color:rgba(255,138,34,1);margin-left:20px;font-size:18px;height:45px;text-align:center;padding:10px; "><a href="#Free Trial " class="Freetrial " style="color:white;text-decoration:none; ">Free Trial</a></div>
+    </div>
+	
+  </div>
+  
+  <div class="header " style="width:100%;height:160px;padding-top:100px; ">
+  <h1 style="margin-top:0px;text-align:center;color:white;font-size:65px;font-weight:700;line-height:1.2; ">
+        Where people are engaged,<br>
+        progress is clear</h1>
+  </div>
+  
+  <div style="width:100%;height:80px;padding-top:130px; ">
+  <p style="text-align:center;color:white;font-size:36px;line-height:40px;font-family:museo-sans;font-weight:100; ">
+    Move your enterprise forward with Clarizen's cloud-based project <br>
+    management software.</p>
+  </div>
+  
+  <div style="width:100%;height:30px;padding-top:140px; ">
+  <h3 style="margin-top:0;color:white;text-align:center;font-size:22px;line-height:1em; ">Take a Tour</h3>
+  </div>
+  
+  <div class="email " style="width:100%;height:80px;padding-top:40px; ">
+  <input id="Email " name="Email " placeholder="Company Email " maxlength="255 " type="email "  style="width:400px;height:50px;margin-left:450px;display:inline-block;border:none;padding:10px 15px;font-size:16px;font-weight:300; ">
+  <span><button type="submit " style="background-color:#ff8a22;height:50px;border:none;color:white;font-size:16px;margin:-4px;width:175px; ">View Product Tour</button></span>
+  </div>
+
+  </div>
+  
+ <div class="main2 " style="background-color:white;red;width:100%;height:425px; ">
+  <div><h2 style="font-size:42px;font-weight:100;line-height: 1.2;text-align:center;color:#333;margin:0;padding-top:45px ">On track. On task. On Clarizen.</h2></div>
+  <div><p style="font-size: 29px;font-weight:700;color:#484848;line-height:1;text-align:center;padding-top:10px; ">Get everyone connected.</p></div>
+  <div><p style="text-align:center;font-size:28px;margin-left:40px;padding-top:10px;padding-bottom:25px;color:#848484 ">Manage projects and connect the enterprise - all from a single, intuitive collaborative work management solution.</p></div>
+  <div class="clickfree " style="background-color:rgba(255,138,34,1);width:220px;text-align:center;margin:auto;cursor:pointer;height:50px;padding:15px; "><a href="/free-trial " style="color:white;text-decoration:none;font-size:15px; ">Start your 30-Day Free Trial</a></div>
+</div>
+
+<div class="main3 " style="width:100%;height:auto;">
+<div><h2 style="text-align:center;font-size:42px;font-weight:100;line-height:1.2;padding-top:50px;font-family:museo-sans,Open Sans,Arial,sans-serif; ">The power to move your business forward</h2></div>
+<div style="width:100%;height:auto;display:inline-block;">
+
+<div class="main3Child " style="margin-left:5%; ">
+<div class="images ">
+<img src="configurable-workflows.svg " alt="Customize Project Workflows ">
+</div>
+<h4>Configurable workflows</h4>
+<p>Customize Clarizen to fit how your enterprise does business, not the opposite.</p>
+</div>
+<div class="main3Child ">
+<div class="images ">
+<img src="in-context-collaboration.svg " alt="Customize Project Workflows ">
+</div>
+<h4>In-context collaboration</h4>
+<p>Centralize and share resources, develop strategies and align communications.</p>
+</div>
+<div class="main3Child ">
+<div class="images ">
+<img src="automated-business-processes.svg " alt="Customize Project Workflows ">
+</div>
+<h4>Automated business processes</h4>
+<p>Create automated and repeatable processes, alerts and workflows.</p>
+</div>
+</div>
+
+<div style="width:100%;height:auto;display:inline-block; ">
+<div class="main4Child " style="margin-left:5%; ">
+
+<div class="images ">
+<img src="real-time-visibility.svg " alt="Customize Project Workflows ">
+</div>
+<h4>Real-time visibility</h4>
+<p>Make accurate data-based decisions, thanks to 360° real-time visibility.</p>
+</div>
+
+<div class="main4Child ">
+
+<div class="images ">
+<img src="flexible-ui.svg " alt="Customize Project Workflows ">
+</div>
+<h4>Flexible UI</h4>
+<p>Empower users with a flexible, intuitive interface that fits their way of working.</p>
+</div>
+
+<div class="main4Child ">
+
+<div class="images ">
+<img src="dynamic-reports-and-dashboards.svg " alt="Customize Project Workflows ">
+</div>
+<h4>Dynamic reports and dashboards</h4>
+<p>Share immediate project data, tracking progress through project management software.</p>
+</div>
+</div>
+
+<div class="TourDemo " style="width:100%;height:9%;text-align:center;">
+      <div class="buttons">
+	   <a style="text-decoration:none;color:white;font-size:16px; ">Take a Tour</a>
+	  </div>
+	   <div class="buttons">
+	   <a style="text-decoration:none;color:white;font-size:16px; ">Live Demo</a>
+	  </div>
+</div>
+
+<div class="software-image-row" style="width:auto;height:auto;text-align:center;"><img src="software-screenshots-2-1.png" alt="no image" style="position:relative;margin-top:30px;">
+</div>
+
+<div class="enterprise" style="height:auto;width:auto;text-align:center;">
+<div style="display:inline-block;"><h2>Enterprise customers see measurable value</h2></div> 
+ </div>
+                                                               
+ <div class="brands" style="background-color:blue;width:100%;height:38%;position:relative;"> 
+ 
+     <div class="f1_container">
+     <div class="f1_card">
+
+     <div class="frontface">
+      <img src="logo-new-brands-300x141.png" alt="not found">
+     </div>
+  
+    <div class="back face center">
+     <blockquote><p>"We are saving 8,000 hours a year in review and meeting times."</p></blockquote>
+     <p class="company">- Newell Brands</p>
+    </div>
+  
+</div>
+</div> 
+
+<div class="f1_container">
+     <div class="f1_card">
+
+     <div class="frontface">
+      <img src="logo-sodexo-300x98.png">
+     </div>
+  
+    <div class="back face center">
+     <blockquote><p>"We've seen a 30% increase in productivity using Clarizen."</p></blockquote>
+     <p class="company">- Sodexo</p>
+    </div>
+  
+</div>
+</div> 
+
+<div class="f1_container">
+     <div class="f1_card" >
+
+     <div class="frontface">
+      <img src="logo-cisco-300x158.png">
+     </div>
+  
+    <div class="back face center">
+     <blockquote style="border:none;"><p>"We can now literally create a roadmap within one to two minutes."</p></blockquote>
+     <p class="company">- Cisco</p>
+    </div>
+  
+</div>
+</div> 
+ </div>
+ 
+ <div id="row-client-logos" style="width:100%;padding:20px 30px;margin:0 auto;">
+     <div class="dell_logo" style="width:100%;margin:auto;text-align:center;">
+	  <p class="logos">
+	    <img class="alignnone size-full" src="netapp_logo_1.jpg" alt="logo-netapp" width="139" height="110">
+	    <img class="alignnone size-full" src="western_union-2-200x100 (1).png" alt="logo-netapp" width="206" height="110">
+	    <img class="alignnone size-full" src="logo-dell.png" alt="logo-netapp" width="145" height="110">
+	    <img class="alignnone size-full" src="logo-marketo.png" alt="logo-netapp" width="185" height="110">
+	    <img class="alignnone size-full" src="logo-box.png" alt="logo-netapp" width="136" height="110">
+	    <img class="alignnone size-full" src="boston-2-200x100.png" alt="logo-netapp" height="110">
+	  </p>
+	 </div>
+ </div>
+ 
+ 
+ <div style="width:100%;padding:25px;margin-bottom:50px;">
+    <div class="ViewMoreDetail" style="width:200px;height:41px;background-color:#ff8a22;margin:auto;text-align:center;padding:10px;"><a class="viewmore">View More Customers</a></div>
+ </div>
+ 
+ <div style="width:1349px;height:360px;">
+   <div class="Gartener1" style="width:50%;padding:30px 100px;float:left;height:360px;background-position:center;background-size:cover;background-image:url('bg-gartner-section-dark.png');">
+      <div class="GartenerMain" style="width:475px;height:300px;">
+	       <div style="width:170px:height:139px;padding-bottom:30px;">
+	         <img src="logo-gartner.svg" alt="garetner image not found" style="width:170px;height:39px;">
+		   </div>
+		    <div style="width:475px;height:165px;margin-bottom:25px;">
+		      <h2 class="clarizentext">Clarizen named a leader again!</h2>
+			   <p style="font-size:16px;color:white;">Gartner 2016 Magic Quadrant for cloud-based IT project and portfolio management services</p>
+		    </div>
+			 <div class="DownloadReport">
+			   <a style="color:white;text-decoration:none;font-size:16px;">Download the Report</a>
+			 </div>
+	  </div>
+   </div> 
+   <div class="gartener2" style="width:50%;padding:30px 100px;height:360px;float:left;background-color:#666666;">
+     <div class="GartenerMain2" style="width:475px;height:300px;">
+	       <div style="width:170px:height:139px;padding-bottom:30px;">
+	         <img src="forrester-white-small.png" alt="garetner image not found" style="width:400px;height:58px;">
+		   </div>
+		    <div style="width:475px;height:165px;margin-bottom:10px;">
+		      <h2 class="ForresterText">Clarizen leads the&nbsp;pack</h2>
+			   <p class="ForresterTextp" style="font-size:16px;color:white;">Clarizen named a leader in The Forrester Wave: Enterprise Collaborative Work Management, Q4 2016 based on strategy, current offering, and market presence</p>
+		    </div>
+			 <div class="DownloadReport">
+			   <a style="color:white;text-decoration:none;font-size:16px;">Download the Report</a>
+			 </div>
+	  </div>
+   
+   </div> 
+ </div>
+ 
+ <div class="lastnewFirst" style="width:100%;height:auto;padding:30px 80px;margin-bottom:2.75%;">
+   <div class="lastnewSecond" style="width:100%;height:auto;">
+      <div class="LastHeader" style="margin-bottom:2.75%;text-align:center;">
+	     <h2 style="margin:0;font-size:42px;font-weight:100;line-height:1.2;">What's new</h2>
+	  </div>
+	  <div class="LastImage" style="width:100%;height:auto;">
+	     <div class="SubLastChild" style="width:100%;height:">
+		     <div class="SuperSubLastChild" style="border:1px solid #848484;display:inline-block;width:calc(25% - 20px);">
+		        <div class="resource-featured-image">
+			      <img src="pc-mag.jpg">
+			    </div>
+			   <div class="resource_content" style="padding:25px 20px;width:100%;height:auto;background-color:white;">
+			   <h4 class="resource_contentclass">Clarizen just made PowerPoint creation, financial planning easier</h4>
+	           <p><span class="icon"></span><span class="final" style="color: #159fdd;">News Item</span></p>
+			   </div>
+			 </div>
+			 
+			 <div class="SuperSubLastChild" style="border:1px solid #848484;display:inline-block;width:calc(25% - 20px);">
+		        <div class="resource-featured-image">
+			      <img src="clarizen-webinar.jpg">
+			    </div>
+			   <div class="resource_content" style="padding:25px 20px;width:100%;height:auto;background-color:white;">
+			     <h4 class="resource_contentclass">Webinar: Clarizen, project productivity and you</h4>
+	           <p><span class="icon2"></span><span style="color: #159fdd;">Event</span></p>
+			   </div>
+			</div>
+			
+			 <div class="SuperSubLastChild" style="border:1px solid #848484;display:inline-block;width:calc(25% - 20px);">
+		        <div class="resource-featured-image">
+			      <img src="spring-release.jpg">
+			    </div>
+			    <div class="resource_content" style="padding:25px 20px;width:100%;height:auto;background-color:white;">
+			    <h4 class="resource_contentclass">Webinar on-demand: 2017 Spring Product Release - Watch now</h4>
+	            <p><span class="icon3"></span><span >webinar</span></p>
+			    </div>
+		   </div> 
+		   
+		     <div class="SuperSubLastChild" style="border:1px solid #848484;display:inline-block;width:calc(25% - 20px);">
+		        <div class="resource-featured-image">
+			      <img src="speed-collaboration.jpg">
+			    </div>
+			   <div class="resource_content" style="padding:25px 20px;width:100%;height:auto;background-color:white;">
+			   <h4 class="resource_contentclass">Five new ways Clarizen improves collaboration and saves time</h4>
+	           <p><span class="icon4"></span><span>Press Release</span></p>
+			   </div>
+		   </div>
+			 
+
+		 </div>
+	  </div>
+	  
+	</div>
+   
+ </div>
+
+ <div class="Tryitnow" style="text-align:center;margin-bottom:5%;">
+   <a class="Tryit">Try it now - Get 30 days unlimited access</a>
+ </div>
+ 
+ <footer id="main_footer">
+   <div class="container">
+      <div class="borderbottom"  style="float:left;margin-bottom:1%;padding-bottom:7%;border-bottom:1px solid white;">
+      <div id="text2">
+	      <div class="ContactUs" style="float:left;margin-bottom:8.47%;">
+		    <a class="contactanchor">Contact Us</a>
+			<ul>
+			    <li>
+			     <a href="https://www.youtube.com/user/ClarizenInc" target="_blank">
+			      <img src="youtube.png" alt="no youtube">
+			     </a>
+			    </li>
+			    <li>
+			     <a href="https://twitter.com/clarizen" target="_blank">
+				  <img src="twitter.png" alt="no twitter">
+				 </a>
+				</li>
+			   <li>
+			     <a href="https://www.linkedin.com/company/clarizen" target="_blank">
+				  <img src="facebook.png" alt="no facebook">
+				 </a>
+			   </li>
+			   <li>
+			    <a href="https://www.linkedin.com/company/clarizen" target="_blank">
+			     <img src="linkedin.png" alt="no linkedin">
+			    </a>
+			   </li>
+			</ul>
+		  </div>
+		  <div id="captora_widget-2">
+		     <ul class="cp_linklist">
+			 <li class="trending">Trending Now:</li>
+			 <li class="trending"><a href="https://www.clarizen.com/work/project-management-software-online">Project Management Software Online</a></li>
+			 <li class="trending"><a href="https://www.clarizen.com/work/project-management-online-software">Project Management Online Software</a></li>
+			 <li class="trending"><a href="https://www.clarizen.com/work/online-project-management-software">Online Project Management Software</a></li>
+			 <li class="trending"><a href="https://www.clarizen.com/work/online-project-software">Online Project Software</a></li>
+			 <li class="trending"><a href="https://www.clarizen.com/work/project-management-software-online-collaboration">Project Management Software Online Collaboration</a></li>
+			 <li class="trending"><a href="https://www.clarizen.com/work/best-online-project-management-software">Best Online Project Management Software</a></li>
+			 <li class="trending"><a href="https://www.clarizen.com/work/time-management-software">Time Management Software</a></li>
+			 <li class="trending"><a href="https://www.clarizen.com/work/enterprise-management-system">Enterprise Management System</a></li>
+			 <li class="trending"><a href="https://www.clarizen.com/work/enterprise-it-management">Enterprise It Management</a></li>
+			 <li class="trending"><a href="https://www.clarizen.com/work/project-management-tool-online">Project Management Tool Online</a></li>
+			 </ul>
+		 </div>
+		 
+	</div>
+	   
+	  <div id="text3">
+	     <h4 class="title">Get Clarizen News and Updates</h4>
+		   <div class="Subscribe">
+		      <a class="subscribeanchor">Subscribe Now</a>
+			  
+		   </div>
+	  </div>
+	  
+	   <div style="color:white;clear:both;">
+	     <ul class="LastListIcons">
+		    <li class="LastIcons">
+		    <a href="https://www.youtube.com/user/ClarizenInc" target="_blank">
+		    <img src="youtube.png"></a>
+		    </li>
+			<li class="LastIcons">
+			<a href="https://twitter.com/clarizen" target="_blank">
+			<img src="twitter.png"></a>
+			</li>
+			<li class="LastIcons">
+			<a href="https://www.facebook.com/Clarizen" target="_blank">
+			<img src="facebook.png"></a>
+			</li>
+			<li class="LastIcons">
+			<a href="https://www.linkedin.com/company/clarizen" target="_blank">
+			<img src="linkedin.png"></a>
+			</li>
+		 </ul>
+	   </div>
+	   
+	</div>
+	
+	  <div id="footer-bottom" style="text-align:center;color:#bcbcbc;font-size:14px;float:left;margin-left:250px;">
+	      &copy;2017 Clarizen. All Rights Reserved.
+		   <ul id="menu-footer-menu" class="bottom-nav">
+		     <li class="menu-item">
+			 <a class="menuanchor" target="_blank" href="https://www.clarizen.com/privacy-policy/">Privacy Policy</a>
+			 </li>
+			 <li class="menu-item">
+			 <a class="menuanchor" target="_blank" href="https://status.clarizen.com/">Status</a>
+			 </li>
+			 <li class="menu-item">
+			 <a class="menuanchor" href="https://www.clarizen.com/site-map/">Site Map</a>
+			 </li>
+		  </ul>
+	  </div>
+  </div>
+  
+ 
+ </footer>
+ 
+
+</div>
+</body>
+</html>
